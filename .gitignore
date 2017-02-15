@@ -1,0 +1,70 @@
+#----------------------------------------------------------------------------
+# Ignore these files when committing to a git repository.
+#
+# See http://git-scm.com/docs/gitignore for more about ignoring files.
+#----------------------------------------------------------------------------
+
+
+## System and Editor
+## =================
+
+# Mac finder artifacts
+.DS_Store
+
+# RubyMine project files
+.idea
+
+# Netbeans project directory
+/nbproject/
+
+# Textmate project files
+/*.tmproj
+
+# Visual Studio Code
+.vscode
+
+# vim artifacts
+**.swp
+
+# scm revert files
+**.orig
+
+# Environment files that may contain sensitive data
+.env
+.powenv
+
+
+
+
+## Project various artifacts
+## ======
+
+# NPM state
+node_modules
+npm-debug.log
+
+# minimal Rails specific artifacts
+db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+/tmp/*
+
+
+# Ruby Bundler state
+/.bundle
+/vendor/bundle/
+/vendor/ruby/
+
+# Build artifacts
+dist/*
+!dist/.keep
+
+# Test
+
+#config
+
+
+
+
+
+
