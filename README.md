@@ -23,7 +23,7 @@ $ docker pull lanvige/node-deploy:6.9.5-onbuild
 
 本镜像是为 node (Yarn & PM2) 发布准备的基础包，包含了必要的前置全局需求：
 
-- yarn@0.24.0
+- yarn@0.21.3
 - pm2@2.4.0
 
 
@@ -71,7 +71,7 @@ application 目录中需要包含以下几个文件:
 #### Application - Dockerfile：
 
 ```
-FROM  lanvige/node-deploy:6.9.5-onbuild
+FROM lanvige/node-deploy:7.6.0-onbuild
 ```
 
 
@@ -91,7 +91,7 @@ $ sudo docker run --name nodedeploytest youimagename:latest
 ```
 
 
-
+### Docker exec
 ```
 $ sudo docker exec -it nodebasetest /sh
 ```

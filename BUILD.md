@@ -18,5 +18,65 @@ $HOME/.yarn/bin/yarn
 
 
 
+## Node Deploy (onbuild) - Current
+
+
+### Build
+
+```
+$ docker build -t="node-deploy:7.6.0-onbuild" .
+```
+
+
+
+### TAG: 多起一个名字 (LTS)：
+
+#### Docker HUB
+
+```
+$ docker tag node-deploy:7.6.0-onbuild lanvige/node-deploy:7.6.0-onbuild
+```
+
+
+
+### Push to registry
+
+#### Docker HUB
+
+```
+$ docker push lanvige/node-deploy:7.6.0-onbuild
+```
+
+
+
+## Node Deploy - LTS
+
+
+### Build
+
+```
+$ docker build -t="node-deploy:6.9.5" .
+```
+
+
+
+### TAG: 多起一个名字 (LTS)：
+
+#### Docker HUB
+
+```
+$ docker tag node-deploy:6.9.5 lanvige/node-deploy:6.9.5
+```
+
+
+
+### Push as you like
+
+
+#### Docker HUB
+
+```
+$ docker push lanvige/node-deploy:6.9.5
+```
 
 
