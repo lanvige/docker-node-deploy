@@ -4,7 +4,7 @@
 ## Build
 
 ```
-$ docker build -t="node-deploy:7.5.0-onbuild" .
+$ docker build -t="node-deploy:7.6.0-onbuild" .
 ```
 
 
@@ -14,13 +14,7 @@ $ docker build -t="node-deploy:7.5.0-onbuild" .
 ### Docker HUB
 
 ```
-$ docker tag node-deploy:7.5.0-onbuild lanvige/node-deploy:7.5.0-onbuild
-```
-
-### hjidc
-
-```
-$ docker tag node-deploy:7.5.0-onbuild dockerhub.hjidc.com/hjstudy/node-deploy:7.5.0-onbuild
+$ docker tag node-deploy:7.6.0-onbuild lanvige/node-deploy:7.6.0-onbuild
 ```
 
 
@@ -30,13 +24,5 @@ $ docker tag node-deploy:7.5.0-onbuild dockerhub.hjidc.com/hjstudy/node-deploy:7
 ### Docker HUB
 
 ```
-$ docker push lanvige/node-deploy:7.5.0-onbuild
+$ docker push lanvige/node-deploy:7.6.0-onbuild
 ```
-
-### hjicd
-
-```
-$ docker push dockerhub.hjidc.com/hjstudy/node-deploy:7.5.0-onbuild
-```
-
-

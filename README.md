@@ -3,23 +3,27 @@
 
 ### Supported tags and respective Dockerfile links
 
-版本：
+
+#### Docker pull:
 
 ```
 $ docker pull lanvige/node-deploy:6.9.5-onbuild
 ```
 
-- LTS: 6.9.5 [(LTS/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
-- LTS: 6.9.5-onbuild [(LTS/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
-- Current: 7.5.0 [(Current/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/current/Dockerfile)
-- Current: 7.5.0-onbuild [(Current/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/current/Dockerfile)
+
+#### 版本：
+
+- LTS: 6.10.0 [(LTS/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
+- LTS: 6.10.0-onbuild [(LTS/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/onbuild/Dockerfile)
+- Current: 7.6.0 [(Current/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/current/Dockerfile)
+- Current: 7.6.0-onbuild [(Current/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/current/onbuild/Dockerfile)
 
 
 ### 介绍
 
 本镜像是为 node (Yarn & PM2) 发布准备的基础包，包含了必要的前置全局需求：
 
-- yarn
+- yarn@0.24.0
 - pm2@2.4.0
 
 

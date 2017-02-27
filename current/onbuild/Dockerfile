@@ -3,7 +3,7 @@
 #
 # VERSION Current
 
-FROM node:7.5.0
+FROM node:7.6.0
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
