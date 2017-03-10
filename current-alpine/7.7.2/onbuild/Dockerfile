@@ -27,6 +27,5 @@ ONBUILD COPY . /app
 
 EXPOSE 80 443
 
-#ENTRYPOINT ["pm2", "start", "--no-daemon", "/app/bin/api"]
-# CMD []
-CMD ["pm2-docker", "/app/process.yml"]
+# Start process.yml
+CMD ["pm2-docker", "start", "--auto-exit", "--env", "production", "/app/process.yml"]
