@@ -29,4 +29,4 @@ EXPOSE 80 443
 
 #ENTRYPOINT ["pm2", "start", "--no-daemon", "/app/bin/api"]
 # CMD []
-CMD ["pm2-docker", "process.yml"]
+CMD ["pm2-docker", "/app/process.yml"]
