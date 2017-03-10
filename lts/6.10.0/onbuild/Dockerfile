@@ -3,7 +3,7 @@
 #
 # VERSION LTS
 
-FROM lanvige/node-deploy:6.10.0
+FROM node:6.10.0
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -15,6 +15,8 @@ ONBUILD ENV NODE_ENV $NODE_ENV
 # Set workdir
 WORKDIR /app/
 
+# install global npm libs
+RUN yarn global add pm2@2.4.0
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN $HOME/.yarn/bin/yarn install --production && $HOME/.yarn/bin/yarn cache clean
