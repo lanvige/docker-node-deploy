@@ -19,7 +19,7 @@ WORKDIR /app/
 RUN yarn global add pm2@2.4.0
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
-ONBUILD RUN $HOME/.yarn/bin/yarn install --production && $HOME/.yarn/bin/yarn cache clean
+ONBUILD RUN yarn install --production && yarn cache clean
 
 # Copy project to $container/app
 ONBUILD COPY . /app
@@ -27,6 +27,5 @@ ONBUILD COPY . /app
 
 EXPOSE 80 443
 
-#ENTRYPOINT ["pm2", "start", "--no-daemon", "/app/bin/api"]
-# CMD []
-CMD ["pm2-docker", "/app/process.yml"]
+# Start process.yml
+CMD ["pm2-docker", "start", "--auto-exit", "--env", "production", "/app/process.yml"]
