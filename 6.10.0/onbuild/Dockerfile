@@ -16,7 +16,7 @@ ONBUILD ENV NODE_ENV $NODE_ENV
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.4.0
+RUN yarn global add pm2@2.4.2
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN $HOME/.yarn/bin/yarn install --production && $HOME/.yarn/bin/yarn cache clean

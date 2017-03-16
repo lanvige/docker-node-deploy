@@ -1,9 +1,9 @@
 #
 # Node Base Dockerfile
 #
-# VERSION LTS-alpine (yarn included)
+# VERSION Current-alpine (yarn included)
 
-FROM node:6.10.0-alpine
+FROM node:7.7.3-alpine
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -16,7 +16,7 @@ ONBUILD ENV NODE_ENV $NODE_ENV
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.4.0
+RUN yarn global add pm2@2.4.2
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN yarn install --production && yarn cache clean
@@ -27,6 +27,5 @@ ONBUILD COPY . /app
 
 EXPOSE 80 443
 
-#ENTRYPOINT ["pm2", "start", "--no-daemon", "/app/bin/api"]
-# CMD []
-CMD ["pm2-docker", "/app/process.yml"]
+# Start process.yml
+CMD ["pm2-docker", "start", "--auto-exit", "--env", "production", "/app/process.yml"]
