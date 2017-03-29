@@ -13,8 +13,8 @@ $ docker pull lanvige/node-deploy:6.9.5-onbuild
 
 - LTS: 6.10.0 [(LTS/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
 - LTS: 6.10.0-onbuild [(LTS/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/onbuild/Dockerfile)
-- Current: 7.7.3 [(Current/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/current/Dockerfile)
-- Current: 7.7.3-onbuild [(Current/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/current/onbuild/Dockerfile)
+- Current: 7.8.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/7.8.0/onbuild/Dockerfile)
+- Current: 7.8.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/7.8.0/onbuild/alpine/Dockerfile)
 
 
 ### 介绍
