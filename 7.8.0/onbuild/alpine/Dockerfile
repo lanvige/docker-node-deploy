@@ -28,4 +28,4 @@ ONBUILD COPY . /app
 EXPOSE 80 443
 
 # Start process.yml
-CMD ["pm2-docker", "start", "--auto-exit", "--env", "production", "/app/process.yml"]
+CMD ["pm2-docker", "start", "/app/process.yml"]
