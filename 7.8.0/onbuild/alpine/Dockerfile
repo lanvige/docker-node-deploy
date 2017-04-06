@@ -16,7 +16,7 @@ ONBUILD ENV NODE_ENV $NODE_ENV
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.4.2
+RUN yarn global add pm2@2.4.4
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN yarn install --production && yarn cache clean
@@ -27,5 +27,7 @@ ONBUILD COPY . /app
 
 EXPOSE 80 443
 
+
 # Start process.yml
-CMD ["pm2-docker", "start", "/app/process.yml"]
+ENTRYPOINT ["pm2-docker"]
+CMD ["start", "/app/process.yml"]
