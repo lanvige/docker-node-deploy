@@ -1,4 +1,22 @@
+# 7.10.0
 
+测试了对 entrypoing 的支持，升级 yarn 到 v0.23.4，升级 pm2 到 2.4.4
+
+在 Docker build 时，去掉 NODE_ENV 的支持，将该配置转移到了 pm2-docker 中。这样，就可以通过 cmd 来进行替换。
+
+```
+CMD ["start", "--env", "production", "/app/process.yml"]
+```
+
+
+参见：
+<https://hub.docker.com/r/keymetrics/pm2-docker-alpine/~/dockerfile/>
+http://pm2.keymetrics.io/docs/usage/application-declaration/
+http://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/
+
+# 7.8.0b (2017/04/07)
+
+加入 entrypoint 的支持，目的是限制容器的使用场景，只能启动 pm2-docker，但对于 该命令的参数，可以通过重新设置 cmd 进行修改。
 
 # 7.8.0a (2017/04/06)
 

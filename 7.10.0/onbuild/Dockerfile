@@ -3,14 +3,14 @@
 #
 # VERSION Current
 
-FROM node:7.8.0
+FROM node:7.10.0
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
 
 # onbuild with nodeenv
-ONBUILD ARG NODE_ENV
-ONBUILD ENV NODE_ENV $NODE_ENV
+# ONBUILD ARG NODE_ENV
+# ONBUILD ENV NODE_ENV $NODE_ENV
 
 # Set workdir
 WORKDIR /app/
@@ -30,4 +30,4 @@ EXPOSE 80 443
 
 # Start process.yml
 ENTRYPOINT ["pm2-docker"]
-CMD ["start", "/app/process.yml"]
+CMD ["start", "--env", "production", "/app/process.yml"]

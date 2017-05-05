@@ -24,7 +24,7 @@ $HOME/.yarn/bin/yarn
 ### Build
 
 ```
-$ docker build -t="node-deploy:7.6.0-onbuild" .
+$ docker build -t="node-deploy:7.10.0-alpine-onbuild" .
 ```
 
 
@@ -34,7 +34,7 @@ $ docker build -t="node-deploy:7.6.0-onbuild" .
 #### Docker HUB
 
 ```
-$ docker tag node-deploy:7.6.0-onbuild lanvige/node-deploy:7.6.0-onbuild
+$ docker tag node-deploy:7.10.0-alpine-onbuild lanvige/node-deploy:7.10.0-alpine-onbuild
 ```
 
 
@@ -44,7 +44,7 @@ $ docker tag node-deploy:7.6.0-onbuild lanvige/node-deploy:7.6.0-onbuild
 #### Docker HUB
 
 ```
-$ docker push lanvige/node-deploy:7.6.0-onbuild
+$ docker push lanvige/node-deploy:7.10.0-alpine-onbuild
 ```
 
 
