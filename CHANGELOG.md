@@ -1,4 +1,4 @@
-# 7.10.0
+# 7.10.0 & 6.10.3
 
 测试了对 entrypoing 的支持，升级 yarn 到 v0.23.4，升级 pm2 到 2.4.4
 
@@ -10,9 +10,9 @@ CMD ["start", "--env", "production", "/app/process.yml"]
 
 
 参见：
-<https://hub.docker.com/r/keymetrics/pm2-docker-alpine/~/dockerfile/>
-http://pm2.keymetrics.io/docs/usage/application-declaration/
-http://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/
+- https://hub.docker.com/r/keymetrics/pm2-docker-alpine/~/dockerfile/
+- http://pm2.keymetrics.io/docs/usage/application-declaration/
+- http://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/
 
 # 7.8.0b (2017/04/07)
 
