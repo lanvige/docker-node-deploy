@@ -3,7 +3,7 @@
 #
 # VERSION Current
 
-FROM node:7.10.0
+FROM node:8.0.0
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -16,7 +16,7 @@ MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.4.4
+RUN yarn global add pm2@2.4.6
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN yarn install --production && yarn cache clean

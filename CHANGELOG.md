@@ -1,6 +1,6 @@
-# 7.10.0 & 6.10.3
+# 8.0.0 & 6.10.3
 
-测试了对 entrypoing 的支持，升级 yarn 到 v0.23.4，升级 pm2 到 2.4.4
+测试了对 entrypoing 的支持，升级 yarn 到 v0.24.6，升级 pm2 到 2.4.6
 
 在 Docker build 时，去掉 NODE_ENV 的支持，将该配置转移到了 pm2-docker 中。这样，就可以通过 cmd 来进行替换。
 
@@ -13,6 +13,10 @@ CMD ["start", "--env", "production", "/app/process.yml"]
 - https://hub.docker.com/r/keymetrics/pm2-docker-alpine/~/dockerfile/
 - http://pm2.keymetrics.io/docs/usage/application-declaration/
 - http://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/
+
+# 8.0.0  (2017/06/01)
+
+终于等来了 8.0
 
 # 7.8.0b (2017/04/07)
 

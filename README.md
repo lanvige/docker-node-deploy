@@ -18,16 +18,16 @@ $ docker pull lanvige/node-deploy:7.10.0-alpine-onbuild
 
 #### Current
 
-- Current: 7.10.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/7.10.0/onbuild/Dockerfile)
-- Current: 7.10.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/7.10.0/onbuild/alpine/Dockerfile)
+- Current: 8.0.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/Dockerfile)
+- Current: 8.0.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/alpine/Dockerfile)
 
 
 ## 介绍
 
 本镜像是为 node (Yarn & PM2) 发布准备的基础包，包含了必要的前置全局需求：
 
-- yarn@0.21.3
-- pm2@2.4.4
+- yarn@0.24.6
+- pm2@2.4.6
 
 
 #### onbuild 版本
