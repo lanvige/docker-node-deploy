@@ -31,4 +31,5 @@ EXPOSE 80 443
 
 
 # Start process.yml
-CMD ["nginx"]
+ENTRYPOINT ["pm2-docker"]
+CMD ["start", "--env", "production", "/app/process.yml"]
