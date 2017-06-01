@@ -1,11 +1,11 @@
 # Node deploy image with Yarn, PM2 and other hooks
 
-一个已安装 yarn@0.23.1, pm2@2.4.4 公共库和打包顺序，启动脚本的 Node.js 基本镜像。
+一个已安装 yarn, pm2 公共库和打包顺序，启动脚本的 Node.js 基本镜像。
 
 #### Docker pull:
 
 ```
-$ docker pull lanvige/node-deploy:7.10.0-alpine-onbuild
+$ docker pull lanvige/node-deploy:8.0.0-alpine-onbuild
 ```
 
 
