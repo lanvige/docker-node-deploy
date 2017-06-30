@@ -3,7 +3,7 @@
 #
 # VERSION Current-alpine (yarn included)
 
-FROM node:8.1.2-alpine
+FROM node:8.1.3-alpine
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
