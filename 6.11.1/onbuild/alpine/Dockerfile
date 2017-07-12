@@ -3,7 +3,7 @@
 #
 # VERSION LTS-alpine (yarn included)
 
-FROM node:6.10.3-alpine
+FROM node:6.11.1-alpine
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -16,7 +16,7 @@ MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.4.4
+RUN yarn global add pm2@2.5.0
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN yarn install --production && yarn cache clean
