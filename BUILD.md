@@ -14,7 +14,7 @@ Node 项目对基础镜像的定制：
 $HOME/.yarn/bin/yarn
 ```
 
-- pm2@2.4.0
+- pm2@2.5.0
 
 
 

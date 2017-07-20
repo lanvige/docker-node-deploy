@@ -2,9 +2,6 @@
 
 一个已安装 yarn, pm2 公共库和打包顺序，启动脚本的 Node.js 基本镜像。
 
-- pm2@2.5.0 <https://github.com/Unitech/pm2>
-- yarn <https://yarnpkg.com/>
-
 
 #### Docker pull:
 
@@ -22,7 +19,7 @@ $ docker pull lanvige/node-deploy:8.2.0-alpine-onbuild
 
 #### Current
 
-- Current: 8.0.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/Dockerfile)
+- Current: 8.2.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/Dockerfile)
 - Current: 8.0.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/alpine/Dockerfile)
 
 
@@ -30,8 +27,8 @@ $ docker pull lanvige/node-deploy:8.2.0-alpine-onbuild
 
 本镜像是为 node (Yarn & PM2) 发布准备的基础包，包含了必要的前置全局需求：
 
-- yarn@0.24.6
-- pm2@2.4.6
+- pm2@2.5.0 <https://github.com/Unitech/pm2>
+- yarn <https://yarnpkg.com/>
 
 
 #### onbuild 版本
@@ -91,3 +88,7 @@ $ docker-compose up -d --build
 ```
 
 这样，就可以通过 docker ps 来查看已启动的项目了。
+
+## 版本命名规则
+
+该 deploy 包以 node 的版本为基础，如 `8.2.0`。但如果在同一个版本中，如果出现 pm2 的大版本升级，或其它配置的升级。会在 node 的版本号后面加上小写的 a-z，来标识版本的升级，如 `8.2.0a`
