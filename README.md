@@ -2,10 +2,14 @@
 
 一个已安装 yarn, pm2 公共库和打包顺序，启动脚本的 Node.js 基本镜像。
 
+- pm2@2.5.0 <https://github.com/Unitech/pm2>
+- yarn <https://yarnpkg.com/>
+
+
 #### Docker pull:
 
 ```
-$ docker pull lanvige/node-deploy:8.0.0-alpine-onbuild
+$ docker pull lanvige/node-deploy:8.2.0-alpine-onbuild
 ```
 
 
