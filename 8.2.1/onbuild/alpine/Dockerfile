@@ -1,9 +1,9 @@
 #
 # Node Base Dockerfile
 #
-# VERSION Current
+# VERSION Current-alpine (yarn included)
 
-FROM node:8.2.0
+FROM node:8.2.1-alpine
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -25,6 +25,8 @@ ONBUILD RUN yarn install --production && yarn cache clean
 ONBUILD COPY . /app
 # ONBUILD COPY process.yml /app/process.yml
 
+
+# Expose both the HTTP (80) and HTTPS (443) ports
 EXPOSE 80 443
 
 
