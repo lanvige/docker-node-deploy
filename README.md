@@ -14,21 +14,21 @@ $ docker pull lanvige/node-deploy:8.2.0-alpine-onbuild
 
 #### LTS 版本：
 
-- LTS: 6.10.0 [(LTS/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
-- LTS: 6.10.0-onbuild [(LTS/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/onbuild/Dockerfile)
+- LTS: 6.11.3 [(LTS/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
+- LTS: 6.11.3-onbuild [(LTS/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/onbuild/Dockerfile)
 
 #### Current
 
-- Current: 8.2.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/Dockerfile)
-- Current: 8.0.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.0.0/onbuild/alpine/Dockerfile)
+- Current: 8.5.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.5.0/onbuild/Dockerfile)
+- Current: 8.5.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.5.0/onbuild/alpine/Dockerfile)
 
 
 ## 介绍
 
 本镜像是为 node (Yarn & PM2) 发布准备的基础包，包含了必要的前置全局需求：
 
-- pm2@2.5.0 <https://github.com/Unitech/pm2>
-- yarn <https://yarnpkg.com/>
+- pm2@2.6.0 <https://github.com/Unitech/pm2>
+- yarn@1.0.2 <https://yarnpkg.com/>
 
 
 #### onbuild 版本
@@ -91,4 +91,4 @@ $ docker-compose up -d --build
 
 ## 版本命名规则
 
-该 deploy 包以 node 的版本为基础，如 `8.2.0`。但如果在同一个版本中，如果出现 pm2 的大版本升级，或其它配置的升级。会在 node 的版本号后面加上小写的 a-z，来标识版本的升级，如 `8.2.0a`
+该 deploy 包以 node 的版本为基础，如 `8.5.0`。但如果在同一个版本中，如果出现 pm2 的大版本升级，或其它配置的升级。会在 node 的版本号后面加上小写的 a-z，来标识版本的升级，如 `8.2.0a`
