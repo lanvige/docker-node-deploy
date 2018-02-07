@@ -1,9 +1,9 @@
 #
 # Node Base Dockerfile
 #
-# VERSION Current-alpine (yarn included)
+# VERSION LTS
 
-FROM node:8.9.0-alpine
+FROM node:9.5.0
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -16,7 +16,7 @@ MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.7.2
+RUN yarn global add pm2@2.9.2
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN yarn install --production && yarn cache clean
@@ -25,8 +25,6 @@ ONBUILD RUN yarn install --production && yarn cache clean
 ONBUILD COPY . /app
 # ONBUILD COPY process.yml /app/process.yml
 
-
-# Expose both the HTTP (80) and HTTPS (443) ports
 EXPOSE 80 443
 
 
