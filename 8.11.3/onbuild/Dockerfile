@@ -1,9 +1,9 @@
 #
 # Node Base Dockerfile
 #
-# VERSION LTS
+# VERSION Current
 
-FROM node:9.5.0
+FROM node:8.11.3
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
@@ -16,7 +16,7 @@ MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 WORKDIR /app/
 
 # install global npm libs
-RUN yarn global add pm2@2.9.2
+RUN yarn global add pm2@3.0.0
 # install npm libs
 ONBUILD COPY package.json yarn.lock /app/
 ONBUILD RUN yarn install --production && yarn cache clean
