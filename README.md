@@ -6,29 +6,37 @@
 #### Docker pull:
 
 ```
-$ docker pull lanvige/node-deploy:8.2.0-alpine-onbuild
+$ docker pull lanvige/node-deploy:10.13.0-alpine-onbuild
 ```
 
 
 ### 版本：
 
-#### LTS 版本：
+#### LTS Latest 版本：
 
-- LTS: 6.11.3 [(LTS/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/Dockerfile)
-- LTS: 6.11.3-onbuild [(LTS/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/lts/onbuild/Dockerfile)
+- LTS: 10.13.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/10.13.0/onbuild/Dockerfile)
+- LTS: 10.13.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/10.13.0/onbuild/alpine/Dockerfile)
+
+
+
+#### LTS PRE:
+
+- LTS: 8.12.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.12.0/onbuild/Dockerfile)
+- LTS: 8.12.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.12.0/onbuild/alpine/Dockerfile)
+
 
 #### Current
 
-- Current: 8.5.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.5.0/onbuild/Dockerfile)
-- Current: 8.5.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.5.0/onbuild/alpine/Dockerfile)
+Current 版本为 v11，暂时没做基础镜像。
 
 
 ## 介绍
 
 本镜像是为 node (Yarn & PM2) 发布准备的基础包，包含了必要的前置全局需求：
 
-- pm2@2.6.0 <https://github.com/Unitech/pm2>
-- yarn@1.0.2 <https://yarnpkg.com/>
+- pm2@3.2.2 <https://github.com/Unitech/pm2>
+- yarn@1.2.2 <https://yarnpkg.com/>
+
 
 
 #### onbuild 版本
@@ -88,6 +96,9 @@ $ docker-compose up -d --build
 ```
 
 这样，就可以通过 docker ps 来查看已启动的项目了。
+
+
+
 
 ## 版本命名规则
 
