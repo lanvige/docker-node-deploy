@@ -1,9 +1,9 @@
 #
 # Node Base Dockerfile
 #
-# VERSION LTS
+# VERSION Current
 
-FROM node:10.13.0
+FROM node:8.14.0
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 

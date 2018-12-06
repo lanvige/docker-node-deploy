@@ -14,15 +14,15 @@ $ docker pull lanvige/node-deploy:10.13.0-alpine-onbuild
 
 #### LTS Latest 版本：
 
-- LTS: 10.13.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/10.13.0/onbuild/Dockerfile)
-- LTS: 10.13.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/10.13.0/onbuild/alpine/Dockerfile)
+- LTS: 10.14.1-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/10.14.1/onbuild/Dockerfile)
+- LTS: 10.13.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/10.14.1/onbuild/alpine/Dockerfile)
 
 
 
 #### LTS PRE:
 
-- LTS: 8.12.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.12.0/onbuild/Dockerfile)
-- LTS: 8.12.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.12.0/onbuild/alpine/Dockerfile)
+- LTS: 8.12.0-onbuild [(onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.14.0/onbuild/Dockerfile)
+- LTS: 8.12.0-alpine-onbuild [(alpine/onbuild/Dockerfile)](https://github.com/lanvige/docker-node-deploy/blob/master/8.14.0/onbuild/alpine/Dockerfile)
 
 
 #### Current

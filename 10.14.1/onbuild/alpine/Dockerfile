@@ -1,9 +1,9 @@
 #
 # Node Base Dockerfile
 #
-# VERSION Current
+# VERSION LTS-alpine (yarn included)
 
-FROM node:8.12.0
+FROM node:10.14.1-alpine
 
 MAINTAINER Lanvige Jiang <lanvige@gmail.com>
 
